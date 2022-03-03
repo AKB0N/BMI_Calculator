@@ -8,7 +8,7 @@
 BMI Calculator app project using Flutter
 
 # Previews
-<img src="https://raw.githubusercontent.com/AKB0N/BMI_Calculator/master/1.png" width="400"/> 
+<img src="https://raw.githubusercontent.com/AKB0N/BMI_Calculator/master/1.png"/> 
 
 Version 1.0.0  :
 * Created the app
