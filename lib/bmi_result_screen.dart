@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bmi_calculator/calculator_screen.dart';
-
+ 
 class ResultScreen extends StatelessWidget {
   final double height;
   final double weight;
@@ -49,9 +48,10 @@ class ResultScreen extends StatelessWidget {
                       Text(
                         'Gender : ${isMale ? 'Male' : 'Female'}',
                         style: const TextStyle(
-                            fontSize: 30,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w900),
+                          fontSize: 30,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w900,
+                        ),
                       ),
                       const SizedBox(
                         height: 5,
@@ -87,7 +87,7 @@ class ResultScreen extends StatelessWidget {
                         height: 5,
                       ),
                       Text(
-                        'BMI Result : ${result.toInt()}kg',
+                        'BMI Result : ${result.toInt()}%',
                         style: const TextStyle(
                             fontSize: 30,
                             color: Colors.white,

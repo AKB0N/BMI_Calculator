@@ -23,6 +23,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
     super.initState();
   }
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +31,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: const Color(0xff0b0f1f),
-        title: const Text('BMI CALCULATOR'),
+        title: const Text('BMI CALCULATOR', style: TextStyle(color: Colors.white),),
         centerTitle: true,
       ),
       body: Column(
@@ -211,9 +212,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                               children: [
                                 FloatingActionButton(
                                   heroTag: 'weight-',
+
                                   backgroundColor: const Color(0xff434554),
                                   child: const Icon(
                                     Icons.remove,
+                                    color: Colors.white,
                                     size: 40,
                                   ),
                                   onPressed: () {
@@ -228,6 +231,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                                   backgroundColor: const Color(0xff434554),
                                   child: const Icon(
                                     Icons.add,
+                                    color: Colors.white,
                                     size: 40,
                                   ),
                                   onPressed: () {
@@ -273,7 +277,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                                   heroTag: 'age+',
                                   backgroundColor: const Color(0xff434554),
                                   child: const Icon(
-                                    Icons.remove,
+                                    Icons.remove, color: Colors.white,
                                     size: 40,
                                   ),
                                   onPressed: () {
@@ -287,7 +291,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                                   heroTag: 'age-',
                                   backgroundColor: const Color(0xff434554),
                                   child: const Icon(
-                                    Icons.add,
+                                    Icons.add, color: Colors.white,
                                     size: 40,
                                   ),
                                   onPressed: () {
@@ -309,7 +313,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
           ),
           Container(
             color: const Color(0xffe7144c),
-            height: 50,
+            height: 80,
             width: double.infinity,
             child: MaterialButton(
               onPressed: () {
